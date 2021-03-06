@@ -3,6 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      white: "hsl(0,0%,100%)",
+      gradients: {
+        a: "hsl(192, 100%, 67%)",
+        b: "hsl(280, 87%, 65%)",
+      },
       light: {
         BrightBlue: "hsl(220, 98%, 61%)",
         VeryLightGray: "hsl(0, 0%, 98%)",
@@ -21,6 +26,11 @@ module.exports = {
         VeryDarkGrayishBlue: "hsl(237, 14%, 26%)",
       },
     },
+
+    fontFamily: {
+      "sans": ["Josefin Sans", "sans-serif"]
+    },
+
     extend: {},
   },
   variants: {
