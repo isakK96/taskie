@@ -2,7 +2,7 @@
   "name": "taskie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://isakK96.github.io/taskie",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.4",
