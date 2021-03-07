@@ -35,7 +35,7 @@ function App() {
           <div>
             <TaskForm addTask={addTask} />
           </div>
-          <div id="taskList" className="bg-white mt-4 max-h-screen rounded-md shadow-md">
+          <div id="taskList" className="bg-white mt-10 max-h-screen rounded-md shadow-md">
             <TaskList tasks={tasks} removeTask={removeTask} />
           </div>
           <div id="bottomMenu" className="flex justify-between">
