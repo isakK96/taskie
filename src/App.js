@@ -39,11 +39,10 @@ function App() {
             <TaskList tasks={tasks} removeTask={removeTask} />
           </div>
           <div id="bottomMenu" className="flex justify-between">
-            <p>{tasks.length} items left</p>
+            <p className="text-light-DarkGrayishBlue">{tasks.length} tasks left</p>
             <div id="taskFilters" className="">
 
             </div>
-            <p>Clear completed</p>
           </div>
         </div>
       </div>
