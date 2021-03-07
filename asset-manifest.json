@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/taskie/static/css/main.fc45ec5f.chunk.css",
+    "main.js": "/taskie/static/js/main.04896fa6.chunk.js",
+    "main.js.map": "/taskie/static/js/main.04896fa6.chunk.js.map",
+    "runtime-main.js": "/taskie/static/js/runtime-main.5401c542.js",
+    "runtime-main.js.map": "/taskie/static/js/runtime-main.5401c542.js.map",
+    "static/js/2.1912b7d5.chunk.js": "/taskie/static/js/2.1912b7d5.chunk.js",
+    "static/js/2.1912b7d5.chunk.js.map": "/taskie/static/js/2.1912b7d5.chunk.js.map",
+    "static/js/3.004c1c76.chunk.js": "/taskie/static/js/3.004c1c76.chunk.js",
+    "static/js/3.004c1c76.chunk.js.map": "/taskie/static/js/3.004c1c76.chunk.js.map",
+    "index.html": "/taskie/index.html",
+    "static/css/main.fc45ec5f.chunk.css.map": "/taskie/static/css/main.fc45ec5f.chunk.css.map",
+    "static/js/2.1912b7d5.chunk.js.LICENSE.txt": "/taskie/static/js/2.1912b7d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5401c542.js",
+    "static/js/2.1912b7d5.chunk.js",
+    "static/css/main.fc45ec5f.chunk.css",
+    "static/js/main.04896fa6.chunk.js"
+  ]
+}
