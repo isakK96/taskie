@@ -4,6 +4,7 @@ const TaskForm = ({ addTask }) => {
   const [task, setTask] = useState("");
 
   const handleSubmit = (e) => {
+    if (!task) return;
     e.preventDefault();
     addTask(task);
     setTask("");
