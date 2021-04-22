@@ -6,7 +6,13 @@ const TaskList = ({ tasks, removeTask, completeTask }) => {
     <div className="taskContainer">
       <ul>
         {tasks.map((task, index) => (
-          <li className="border-b py-4 border-light-LightGrayishBlue">
+          <li
+            className={
+              task.taskComplete
+                ? "bg-light-BrightBlue bg-opacity-25 border-b py-4 border-light-LightGrayishBlue"
+                : "border-b py-4 border-light-LightGrayishBlue"
+            }
+          >
             <Task
               key={task}
               index={index}
