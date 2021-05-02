@@ -3,7 +3,7 @@ import Task from "./Task.js";
 
 const TaskList = ({ tasks, removeTask, completeTask }) => {
   return (
-    <div className="taskContainer">
+    <div className="taskContainer shadow-2xl">
       <ul>
         {tasks.map((task, index) => (
           <li

@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     colors: {
       white: "hsl(0,0%,100%)",
@@ -20,7 +20,7 @@ module.exports = {
         VeryDarkBlue: "hsl(235, 21%, 11%)",
         VeryDarkDesaturatedBlue: "hsl(235, 24%, 19%)",
         LightGrayishBlue: "hsl(234, 39%, 85%)",
-        "LightGrayishBlue (hover)": "hsl(236, 33%, 92%)",
+        LightGrayishBlueHover: "hsl(236, 33%, 92%)",
         DarkGrayishBlue: "hsl(234, 11%, 52%)",
         VeryDarkGrayishBlue: "hsl(233, 14%, 35%)",
         VeryDarkGrayishBlue: "hsl(237, 14%, 26%)",
@@ -28,7 +28,7 @@ module.exports = {
     },
 
     fontFamily: {
-      "sans": ["Josefin Sans", "sans-serif"]
+      sans: ["Josefin Sans", "sans-serif"],
     },
 
     extend: {},
@@ -37,4 +37,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
