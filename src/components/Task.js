@@ -5,7 +5,6 @@ const Task = ({ task, index, removeTask, completeTask }) => {
   return (
     <div className="text-lg mx-4 text-light-VeryDarkGrayishBlue flex justify-between text-right">
       <button
-        onClick={() => completeTask(index)}
         className={
           task.taskComplete
             ? "focus:outline-none w-9 h-9 border-2 text-2xl text-white border-light-BrightBlue rounded-full bg-gradients-b bg-gradient-to-br to-gradients-a"
@@ -23,7 +22,10 @@ const Task = ({ task, index, removeTask, completeTask }) => {
         {task.task}
       </div>
       <button
-        onClick={() => removeTask(task)}
+        onClick={(e) => {
+          removeTask(task);
+          e.stopPropagation();
+        }}
         className="dark:text-dark-LightGrayishBlue opacity-40 hover:opacity-100"
       >
         <FaTimes />

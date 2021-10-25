@@ -7,10 +7,11 @@ const TaskList = ({ tasks, removeTask, completeTask }) => {
       <ul>
         {tasks.map((task, index) => (
           <li
+            onClick={() => completeTask(index)}
             className={
               task.taskComplete
-                ? "bg-light-BrightBlue bg-opacity-25 border-b py-4 border-light-LightGrayishBlue"
-                : "border-b py-4 border-light-LightGrayishBlue"
+                ? "bg-light-BrightBlue bg-opacity-25 border-b py-4 border-light-LightGrayishBlue cursor-pointer"
+                : "border-b py-4 border-light-LightGrayishBlue cursor-pointer"
             }
           >
             <Task
