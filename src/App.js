@@ -74,9 +74,13 @@ function App() {
                 completeTask={completeTask}
               />
             </div>
-            <div id="bottomMenu" className="flex justify-between">
+            <div id="bottomMenu" className="flex justify-between mt-4">
               <p className="text-light-DarkGrayishBlue">
-                {tasks.length} tasks left
+                {
+                  tasks.filter(({ taskComplete }) => taskComplete === false)
+                    .length
+                }{" "}
+                tasks left!
               </p>
               <div id="taskFilters" className=""></div>
             </div>
