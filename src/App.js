@@ -23,6 +23,15 @@ function App() {
     setTasks(newTasks);
   };
 
+  const countCompleted = () => {
+    const result = tasks.filter(
+      ({ taskComplete }) => taskComplete === false
+    ).length;
+    return result === 1
+      ? result + " task remaining"
+      : result + " tasks remaining";
+  };
+
   // Load any existing tasks
   useEffect(() => {
     const tasks = JSON.parse(localStorage.getItem("tasks"));
@@ -75,13 +84,7 @@ function App() {
               />
             </div>
             <div id="bottomMenu" className="flex justify-between mt-4">
-              <p className="text-light-DarkGrayishBlue">
-                {
-                  tasks.filter(({ taskComplete }) => taskComplete === false)
-                    .length
-                }{" "}
-                tasks left!
-              </p>
+              <p className="text-light-DarkGrayishBlue">{countCompleted()}</p>
               <div id="taskFilters" className=""></div>
             </div>
           </div>
